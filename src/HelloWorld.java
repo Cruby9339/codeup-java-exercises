@@ -53,9 +53,11 @@ public class HelloWorld {
 //
 //        System.out.println(y);
 
-        byte myByte = 300;
+//        byte myByte = 300;
+//
+//        System.out.println(myByte);
 
-        System.out.println(myByte);
+
 
 
     }
