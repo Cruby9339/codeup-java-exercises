@@ -63,7 +63,7 @@ public class ConsoleExercises {
 //            default:
 //                System.out.println("Acceptable");
 
-        System.out.println("This is a sout");
+        System.out.println("This is a sout lol ");
 
 
         }
