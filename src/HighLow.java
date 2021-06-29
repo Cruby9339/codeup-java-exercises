@@ -9,7 +9,7 @@ public class HighLow {
         Scanner sc = new Scanner(System.in);
 
         int random_int = (int) Math.floor(Math.random() * (100 + 1) + 0);
-        random_int += 1;
+
 
         System.out.println("I wanna play a game...Please enter a number to begin.");
         int userGuess = sc.nextInt();
