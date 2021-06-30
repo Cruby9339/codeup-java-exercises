@@ -7,11 +7,11 @@ public class MethodsExercises {
 
         Scanner sc = new Scanner(System.in);
 
-//        System.out.println(addition(1,2));
-//        System.out.println(subtraction(5,2));
-//        System.out.println(multiplication(5,10));
-//        System.out.println(division(10,2));
-//        System.out.println(modulus(10, 2));
+        System.out.println(addition(1,2));
+        System.out.println(subtraction(5,2));
+        System.out.println(multiplication(5,10));
+        System.out.println(division(10,2));
+        System.out.println(modulus(10, 2));
 
 //        getInteger(1, 10);
 
@@ -20,7 +20,7 @@ public class MethodsExercises {
 //        int userInt = sc.nextInt();
 //        System.out.println(factorial(userInt));
 
-        diceGame(sc);
+//        diceGame(sc);
 
     }
 
