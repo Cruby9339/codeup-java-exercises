@@ -10,6 +10,10 @@ public class ObjectOrientedProgramming {
         Person person1 = new Person();
         person1.setName("Christian");
         System.out.println(person1.getEntertainment(" ride rollercoaster"));
+
+        Person person2 = new Person();
+        person2.setAge(28);
+        System.out.println(person2.getAge());
     }
 
 }
