@@ -48,7 +48,7 @@ public class ConsoleIO {
 
         System.out.println("for commit");
         System.out.println("another commit");
-
+        System.out.println("and another");
 
     }
 
