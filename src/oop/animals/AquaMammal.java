@@ -9,8 +9,12 @@ public class AquaMammal extends MarineAnimal {
         this.maxTimeSubmerged = maxTimeSubmerged;
     }
 
+    public AquaMammal(String name) {
+        super(name);
+    }
+
     public AquaMammal() {
-        super();
+
     }
 
     public int getMaxTimeSubmerged() {

@@ -20,6 +20,9 @@ public class MarineAnimal {
 
     }
 
+    public MarineAnimal(String name){
+        this.name = name;
+    }
 
     public boolean isCanSwim() {
         return canSwim;
@@ -60,4 +63,8 @@ public class MarineAnimal {
     public void setName(String name) {
         this.name = name;
     }
+
+
+
+
 }

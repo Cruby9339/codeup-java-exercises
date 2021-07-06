@@ -1,6 +1,6 @@
 package oop.animals;
 
-public class fish extends MarineAnimal{
+public class Fish extends MarineAnimal{
 
     private boolean canSwim;
     private int length;
@@ -9,11 +9,15 @@ public class fish extends MarineAnimal{
     private String name;
     private boolean hasScales;
 
-    public fish(boolean canSwim, int length, int finCount, boolean isSaltwater, String name, boolean hasScales) {
+    public Fish(boolean canSwim, int length, int finCount, boolean isSaltwater, String name, boolean hasScales) {
         super(canSwim,length,finCount,isSaltwater,name);
         this.hasScales = hasScales;
     }
 
+    public Fish(String name){
+        super(name);
+
+    }
 
     public boolean isHasScales() {
         return hasScales;
