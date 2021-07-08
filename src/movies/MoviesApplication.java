@@ -12,14 +12,14 @@ public class MoviesApplication {
         Movie[] theList = MoviesArray.findAll();
         String exit = "";
         do {
-            pickCategory(theList, sc);
+            chooseCategory(theList, sc);
             System.out.println("Type 'exit' to exit application or type 'other' to explore another category \n Enter [exit/other]");
             exit = sc.nextLine();
         } while (!exit.equalsIgnoreCase("exit"));
     }
 
 
-    private static void pickCategory(Movie[] moviesArray, Scanner scanner){
+    private static void chooseCategory(Movie[] moviesArray, Scanner scanner){
         System.out.println("Would you like to see all movies or by category? \n Enter [all/drama/musical/scifi/horror/comedy/animated]");
         String userInput = scanner.nextLine();
         int count = 0;
