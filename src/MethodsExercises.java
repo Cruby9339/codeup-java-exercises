@@ -24,6 +24,11 @@ public class MethodsExercises {
 
     }
 
+    public static int random(int maxNumber, int minNumber){
+        return (int)(Math.random() * ((maxNumber-minNumber)+1) + minNumber);
+    }
+
+
     public static int addition(int num1, int num2) {
         return num1 + num2;
     }
