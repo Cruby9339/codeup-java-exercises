@@ -46,6 +46,7 @@ public class ConsoleIO {
                 System.out.println(word);
             }
 
+        System.out.println("for commit");
 
 
 

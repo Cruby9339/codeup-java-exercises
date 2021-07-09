@@ -69,10 +69,9 @@ public class GradeApplication {
         }
         String seeAnother;
         do {
-            System.out.println("What student would you like to see more information on?");
+            System.out.println("Which student would you like to see information on?");
             System.out.println(displayNames);
             Scanner sc = new Scanner(System.in);
-            Input in = new Input(sc);
             String userInput = sc.nextLine();
             StringBuilder studentData = new StringBuilder("name,github_username,average\n");
             boolean pickedInput = students.containsKey(userInput);
