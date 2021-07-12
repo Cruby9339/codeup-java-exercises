@@ -1,3 +1,5 @@
+import collections.Person;
+
 import java.util.Arrays;
 
 public class ArraysExercises {

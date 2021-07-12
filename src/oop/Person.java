@@ -25,6 +25,9 @@ public class Person {
 
     }
 
+    public Person(String fullName) {
+    }
+
     //properties
     //command n for creating getters and setters
 

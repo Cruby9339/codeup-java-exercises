@@ -1,42 +1,47 @@
 package warmup;
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.*;
 
 public class Solution {
 
     public static void main(String[] args) {
-//        Parent saySomething = new Parent();
-//        saySomething.SayHello();
-//
-//        Subclass saySomething2 = new Subclass();
-//        saySomething2.imTheSub();
 
         Scanner sc = new Scanner(System.in);
-//        System.out.println("Give me a string ");
-//        String input=keyboard.nextLine();
+
+        ArrayList<String> vacay = new ArrayList<>();
+        vacay.add("Tokyo");
+        vacay.add("Canyon Lake");
+        vacay.add("Comal River");
+
+        System.out.println(vacay);
+
+        System.out.println("Enter a vacation spot: ");
+
+       String name = sc.nextLine();
+       vacay.add(name);
+
+        System.out.println(vacay);
+
+//        String input;
 //
-//        int upperCase = 0;
+//        System.out.println("Enter the Input String");
 //
-//        for (int i = 0; i < input.length(); i++) {
-//            if (Character.isUpperCase(input.charAt(i)))
-//                upperCase++;
+//        input=sc.nextLine();
+//
+//        int count=0;
+//
+//        StringTokenizer st= new StringTokenizer(input, " "); // Space as delimiter
+//
+//        while(st.hasMoreTokens())
+//
+//        {
+//
+//            count++;
+//
+//            System.out.println(count+" : "+st.nextToken());
+//
 //        }
-//
-//        System.out.printf("There are %s uppercase letters.",upperCase);
-
-
-//        int numOne = Integer.parseInt("5");
-//        int numTwo = Integer.parseInt("6");
-        System.out.println("Please enter 2 numbers");
-        int numOne = sc.nextInt();
-        int numTwo = sc.nextInt();
-        String operator = sc.nextLine();
-
-
-        add(numOne, numTwo);
-        subtract(numOne, numTwo);
-        multiply(numOne, numTwo);
-        divide(numOne, numTwo);
-
 
 
     }
@@ -46,25 +51,7 @@ public class Solution {
 
 
 
-    public static void add(int numOne, int numTwo) {
-        int result = numOne + numTwo;
-        System.out.println(numOne + " + " + numTwo + " = " + result);
-    }
 
-    public static void subtract(int numOne, int numTwo) {
-        int result = numOne - numTwo;
-        System.out.println(numOne + " - " + numTwo + " = " + result);
-    }
-
-    public static void multiply(int numOne, int numTwo) {
-        int result = numOne * numTwo;
-        System.out.println(numOne + " * " + numTwo + " = " + result);
-    }
-
-    public static void divide(int numOne, int numTwo) {
-        int result = numOne / numTwo;
-        System.out.println(numOne + " / " + numTwo + " = " + result);
-    }
 
 
 
