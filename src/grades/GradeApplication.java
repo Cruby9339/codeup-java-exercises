@@ -64,7 +64,7 @@ public class GradeApplication {
 
         System.out.println("Welcome! \nHere are the github usernames of our students:");
         StringBuilder displayNames = new StringBuilder();
-        for (int i = 0; i < students.size(); i += 1) {
+        for (int i = 0; i < students.size(); i++) {
             displayNames.append("|").append(students.keySet().toArray()[i]).append("| ");
         }
         String seeAnother;
@@ -74,18 +74,18 @@ public class GradeApplication {
             Scanner sc = new Scanner(System.in);
             Input in = new Input(sc);
             String userInput = sc.nextLine();
-            StringBuilder allThings = new StringBuilder("name,github_username,average\n");
+            StringBuilder studentData = new StringBuilder("name,github_username,average\n");
             boolean pickedInput = students.containsKey(userInput);
             if (!pickedInput) {
                 if (userInput.equalsIgnoreCase("all")) {
-                    for (int i = 0; i < students.size(); i += 1) {
-                        allThings.append(students.get(students.keySet().toArray()[i]).getName()).append(",");
-                        allThings.append(students.keySet().toArray()[i]).append(",");
-                        allThings.append(students.get(students.keySet().toArray()[i]).getGradeAverage()).append("\n");
+                    for (int i = 0; i < students.size(); i++) {
+                        studentData.append(students.get(students.keySet().toArray()[i]).getName()).append(",");
+                        studentData.append(students.keySet().toArray()[i]).append(",");
+                        studentData.append(students.get(students.keySet().toArray()[i]).getGradeAverage()).append("\n");
                     }
-                    System.out.println(allThings);
+                    System.out.println(studentData);
                 } else {
-                    System.out.println("Sorry, no student found with the github username of " + userInput + ".");
+                    System.out.println("Unable to find user with the github username of " + userInput + ".");
                 }
             } else {
                 System.out.println("Name: " + students.get(userInput).getName() + " - Github Username: " + userInput);
