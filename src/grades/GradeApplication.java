@@ -62,14 +62,14 @@ public class GradeApplication {
 //        System.out.println("Marina: " + Marina.getGradeAverage());
 //        System.out.println("Miyavi: " + Miyavi.getGradeAverage());
 
-        System.out.println("Welcome! \nHere are the github usernames of our students:");
+
         StringBuilder displayNames = new StringBuilder();
         for (int i = 0; i < students.size(); i++) {
             displayNames.append("|").append(students.keySet().toArray()[i]).append("| ");
         }
         String seeAnother;
         do {
-            System.out.println("Which student would you like to see information on?");
+            System.out.println("Welcome! \nWhich student would you like to see information on?");
             System.out.println(displayNames);
             Scanner sc = new Scanner(System.in);
             String userInput = sc.nextLine();
