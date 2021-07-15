@@ -26,7 +26,7 @@ public class Input {
     public int getInt(){
         int userInput;
         try {
-            userInput = Integer.valueOf(sc.nextLine());
+            userInput = Integer.parseInt(sc.nextLine());
         } catch(NumberFormatException e){
             System.out.println("not an integer. Please try again.");
             return getInt();
